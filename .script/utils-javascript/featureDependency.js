@@ -46,9 +46,7 @@ for(const item of obj.packageDirectories){
                if(compare == 1){
                    //1 if string1 is greater (higher in the alphabetical order) than string2
                    outputString = outputString+'latestVersion is higher in alphabetical order than dependencyVersion';
-				   const newVersionNumber = document.createElement('versionNumber');
-				   newVersionNumber.innerHTML = latestVersion;
-				   dependency.versionNumber.replaceWith(newVersionNumber);
+				   
                } else if(compare == 0){
                    //0 if string1 and string2 are equal in the alphabetical order
                    outputString = outputString+'latestVersion is equal in alphabetical order to dependencyVersion';
